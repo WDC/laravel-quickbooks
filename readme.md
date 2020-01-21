@@ -5,12 +5,20 @@
 
 Take a look at [contributing.md](contributing.md) to see a to do list.
 
+## Credit Note
+
+Package was built from the following author:
+
+[LifeOnScreen/laravel-quickbooks](https://github.com/LifeOnScreen/laravel-quickbooks)
+
+This is only a fork to be able to use this package in Laravel 6.x, and newer PHP versions.
+
 ## Installation
 
 Via Composer
 
 ``` bash
-$ composer require lifeonscreen/laravel-quickbooks
+$ composer require charliepage88/laravel-quickbooks
 ```
 
 Publish package and run migrations

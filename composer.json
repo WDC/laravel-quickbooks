@@ -17,7 +17,7 @@
     "homepage": "https://github.com/charliepage88/laravel-quickbooks",
     "keywords": ["Laravel", "laravel-quickbooks"],
     "require": {
-        "illuminate/support": "~5|~6",
+        "illuminate/support": "^6.2|~5",
         "quickbooks/v3-php-sdk": "^5.3"
     },
     "require-dev": {

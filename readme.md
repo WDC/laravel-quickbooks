@@ -21,11 +21,10 @@ Via Composer
 $ composer require charliepage88/laravel-quickbooks
 ```
 
-Publish package and run migrations
+Publish package config:
 
 ``` bash
-$ php artisan vendor:publish
-$ php artisan migrate
+$ php artisan vendor:publish --provider="LifeOnScreen\LaravelQuickBooks\LaravelQuickBooksServiceProvider" --tag="quickbooks.config"
 ```
 
 ## Usage

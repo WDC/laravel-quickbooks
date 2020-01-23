@@ -22,7 +22,7 @@ class QuickBooksAuthenticator
      */
     public static function getAuthorizationUrl(): string
     {
-        $cookieLife  = 30;
+        $cookieLife  = 45;
         $cookieValue = str_random(32);
         $validUntil  = Carbon::now()->addMinutes($cookieLife)->timestamp;
         Cookie::queue(Cookie::make('quickbooks_auth', $cookieValue, $cookieLife));
@@ -149,6 +149,7 @@ class QuickBooksAuthenticator
      */
     protected static function cookieIsValid(): bool
     {
+	/*
         $validCookie = explode('|', cache('qb-auth-cookie'));
 
         if ($validCookie[0] === Cookie::get('quickbooks_auth') && (int)$validCookie[1] > time()) {
@@ -156,5 +157,9 @@ class QuickBooksAuthenticator
         }
 
         return false;
+	*/
+	$ex = explode('|', cache('qb-auth-cookie'));
+
+	return !empty($ex[0]) && ((int) $ex[1] > time());
     }
 }

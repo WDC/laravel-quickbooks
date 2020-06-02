@@ -1,5 +1,5 @@
 {
-    "name": "charliepage88/laravel-quickbooks",
+    "name": "codesmithdevelopment/laravel-quickbooks",
     "description": "Laravel Quickbooks integration",
     "license": "MIT",
     "authors": [
@@ -14,7 +14,7 @@
             "homepage": "https://www.charliepage88.com"
         }
     ],
-    "homepage": "https://github.com/charliepage88/laravel-quickbooks",
+    "homepage": "https://github.com/codesmithdevelopment/laravel-quickbooks",
     "keywords": ["Laravel", "laravel-quickbooks"],
     "require": {
         "illuminate/support": "^6.2|~5",
